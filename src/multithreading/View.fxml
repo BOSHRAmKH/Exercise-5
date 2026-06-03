@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" alignment="CENTER" prefHeight="200" prefWidth="300" xmlns:fx="http://javafx.com/fxml" fx:controller="multithreading.DownloadController">
+    <ProgressBar fx:id="pb1" prefWidth="250" progress="0.0" />
+    <ProgressBar fx:id="pb2" prefWidth="250" progress="0.0" />
+    <ProgressBar fx:id="pb3" prefWidth="250" progress="0.0" />
+    <Button text="Start Downloads" onAction="#startDownloads" />
+</VBox>
