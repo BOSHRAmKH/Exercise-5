@@ -13,11 +13,10 @@ public class Multithreading extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // استخدام getClass().getResource للتأكد من العثور على الملف
             Parent root = FXMLLoader.load(getClass().getResource("/multithreading/View.fxml"));
             
             primaryStage.setTitle("File Download Simulator");
-            primaryStage.setScene(new Scene(root, 400, 300)); // زيادة الحجم قليلاً لراحة العين
+            primaryStage.setScene(new Scene(root, 400, 300));
             primaryStage.show();
             
         } catch (IOException e) {

@@ -13,7 +13,7 @@ public class DownloadController {
 
     @FXML
     public void startDownloads() {
-        // تشغيل 3 خيوط تنفيذ (Threads) مستقلة
+     
         runDownload(pb1);
         runDownload(pb2);
         runDownload(pb3);
@@ -24,11 +24,9 @@ public class DownloadController {
             Random random = new Random();
             for (double i = 0; i <= 1.0; i += 0.01) {
                 final double progress = i;
-                // تحديث واجهة المستخدم بأمان
                 Platform.runLater(() -> pb.setProgress(progress));
                 
                 try {
-                    // محاكاة سرعة تحميل متغيرة لكل ملف
                     Thread.sleep(random.nextInt(100) + 50);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
